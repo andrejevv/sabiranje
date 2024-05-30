@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idSaberi"
+        android:layout_width="96dp"
+        android:layout_height="54dp"
+        android:onClick="onClickSaberi"
+        android:text="SABERI"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
+
+    <EditText
+        android:id="@+id/idBr1"
+        android:layout_width="192dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Unesite prvi broj"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/idSaberi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <EditText
+        android:id="@+id/idBr2"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:hint="Unesite drugi broj"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/idSaberi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toEndOf="@+id/idBr1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/idRezultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSaberi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
